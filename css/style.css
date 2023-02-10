@@ -1,0 +1,352 @@
+/*
+font-weight:
+Устанавливает насыщенность шрифта.
+100 - thin
+300 - lite
+400 - normal
+500 - medium
+600 - semibold
+700 - bold
+900 - black
+*/
+
+/* &display=swap&subset=cyrillic-ext */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap&subset=cyrillic-ext "); 
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	background-color: #000;
+	color: #f5f5f5;
+}
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	font-family: 'Roboto' ;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Ограничивающий контейнер */
+[class*="__container"] {
+	max-width: 1020px;
+	margin: 0px auto;	
+}
+.main {
+	flex-grow: 1;
+}
+/* ------------------------------ */
+
+.header{
+	padding: 26px 0px 312px 0px;
+	background: url(../img/bg.jpg)center / cover no-repeat;
+}
+.header__container {
+}
+.header__inform {
+	display: flex;
+	align-items: center;
+}
+.header__inform:not(:last-child) {
+	margin-bottom: 30px;
+}
+.inform {
+}
+.inform__logo {
+}
+.inform__logo:not(:last-child) {
+	margin-right: 245px;
+}
+.inform__image {
+}
+.inform__box {
+	display: flex;
+	flex: 1 1 33.333%;
+}
+.inform__box *:not(:last-child) {
+	margin-right: 30px;
+}
+.inform__hour {
+}
+.hour-inform {
+	padding: 0px 0px 0px 32px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1.83;
+	letter-spacing: 0.15px;
+	position: relative;
+}
+.hour-inform::before {
+	content: '';
+	background: url(../img/time.svg)0 0 no-repeat;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 2px;
+	left: 0px;
+}
+.hour-inform__title {
+	text-transform: uppercase;
+}
+.hour-inform__subtitle {
+}
+.inform__contact {
+}
+.contact-inform {
+	padding: 0px 0px 0px 32px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.83;
+	letter-spacing: 0.15px;
+	position: relative;
+}
+.contact-inform::before {
+	content: '';
+	background: url(../img/tel.svg)0 0 no-repeat;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 2px;
+	left: 0px;
+}
+.contact-inform__title {
+	text-transform: uppercase;
+}
+.contact-inform__subtitle {
+}
+.inform__btn {
+	padding: 12px 36px;
+	align-self: center;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	border-radius: 6px;
+	background-color:#F2726F;
+	color: #fff;
+}
+.header__menu {
+	padding: 10px 48px 10px 40px;
+	background-color: #FFF;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.header__menu:not(:last-child) {
+	margin-bottom: 126px;
+}
+.menu {
+}
+.menu__items {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.menu__link:not(:last-child) {
+	margin-right: 40px;
+}
+.menu__link a {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.57;
+	letter-spacing: 0.15px;
+	color: #000000;
+}
+.menu__link_arrow-top  {
+	padding: 0px 10px 0px 0px;
+	position: relative;
+}
+.menu__link_arrow-top a::after {
+	content: '';
+	background: url(../img/arrow.svg)0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 3px;
+	left: 60px;
+}
+.menu__link_arrow-bottom {
+	padding: 0px 10px 0px 0px;
+	position: relative;
+}
+.menu__link_arrow-bottom a::after {
+	content: '';
+	background: url(../img/arrow.svg)0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 3px;
+	left: 38px;
+}
+.menu__image {
+}
+.menu__image_circle {
+	
+}
+.menu__image:not(:last-child) {
+	margin-right: 25px;
+}
+.menu__image_orange {
+	color: #fff;
+	font-size: 10px;
+	width: 12px;
+	height: 12px;
+	text-align: center;
+	background-color: #F2726F;
+	border-radius: 50%;
+	position: absolute;
+	top: -2px;
+	left: 64px;
+}
+
+.header__title {
+	font-weight: 900;
+	font-size: 56px;	
+	line-height: 1;
+	color: #FFF;
+	max-width: 583px;
+}
+.header__title:not(:last-child) {
+	margin-bottom: 48px;
+}
+.header__btn {
+	padding: 12px 36px;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	border-radius: 6px;
+	background-color:#F2726F;
+	color: #fff;
+}
+
+
+.sed {
+	padding: 91px 0px 112px 0px;
+}
+.sed__container {
+}
+.sed__box {
+}
+.sed__box:not(:last-child) {
+	margin-bottom: 64px;
+}
+.box {
+}
+
+.box__title {
+	padding: 0px 0px 0px 25px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #5D62B5;
+	position: relative;
+}
+.box__title::before {
+	content: '';
+	background: url(../img/logoblue.svg)0 0 no-repeat;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: -2px;
+	left: 0px;
+}
+.box__title:not(:last-child) {
+	margin: 0px 0px 32px 0px;
+}
+.box__subtitle {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 1.17;
+}
+.sed__items {
+	display: flex;
+	margin: 0px -12px;
+	flex-wrap: wrap;
+	row-gap: 24px;
+}
+.sed__item {
+	padding: 0px 12px;
+	display: flex;
+	flex: 1 1 33.333%;
+}
+.sed__picture {
+	margin: 0px 12px 0px 0px;
+}
+.sed__image {
+}
+.sed__content {
+}
+.content-sed {
+}
+.content-sed__title {
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 1.37;
+	color: #F2726F;
+}
+.content-sed__title:not(:last-child) {
+	margin-bottom: 20px;
+}
+.content-sed__text {
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+}
